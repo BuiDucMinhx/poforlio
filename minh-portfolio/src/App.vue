@@ -47,7 +47,7 @@
         <li>12. Thuật toán : chỉ dùng để optimize, ko viết cho đẹp. nếu framework đã hỗ trợ thì nên dùng framework để readable first.</li>
         <li>13. Thread : Executor dùng chung cho toàn app để quản lí core, chỉ dùng nếu thực sự cần vì thread luôn có queue ảnh hưởng đến tail latency</li>
         <li>14. Dùng primitive để hạn chế allocation nhất có thể.</li>
-        <li>15. Hiện app mình chỉ xài caffein thay vì redis cho cahce, EES thay vì kafka cho queue, mình đang rất muốn scale để xem ngưỡng nào là cần đổi stack. (scale khi status > thresh hold).</li>
+        <li>15. Hiện app mình chỉ xài caffein thay vì redis cho cahce, SSE thay vì kafka cho queue, mình đang rất muốn scale để xem ngưỡng nào là cần đổi stack. (scale khi status > thresh hold).</li>
         <li>16. Viết unit test với mục đích duy nhất : khóa invariant bussiness chứ ko phải để tăng coverage, nếu invariant mình có thể encode bằng comment hoặc khả năng đọc đc implicit trong code mình có thể bỏ viết test.</li>
         <li>17. Tư duy onwership : dev nên chịu trách nhiệm cho toàn bộ code của mình ở phần outcome chỉ như thế dev mới viết code 1 cách đàng hoàng, nếu ko được chịu trách nhiệm thì trực giác kĩ thuật của họ sẽ bị mài mòn theo năm tháng .</li>
       </ul>
@@ -74,7 +74,7 @@
         <ul>
           <li>Chỉ đổi stack khi metrics vượt threshold.</li>
           <li>Caffeine trước Redis.</li>
-          <li>EES trước Kafka.</li>
+          <li>SSE trước Kafka.</li>
           <li>Scale dựa trên dữ liệu, không dựa trên hype.</li>
         </ul>
       </div>
