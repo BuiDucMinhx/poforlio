@@ -17,12 +17,12 @@
 
   <div class="work-item">
     <p>
+      - Mỗi ngày mình vẫn luôn cố gắng commit 1 thứ gì đó có ý nghĩa dù mình đã thất nghiệp trong 1 thời gian dài, có thể là 1 thuật toán nào đó hay hay trong Cracking the code interview, hoặc 1 update nào đó có ý nghĩa cho dự án mà mình tâm huyết, mình ko biết liệu sẽ đi đến đâu nhưng mình nghĩ đó là niềm vui mỗi ngày của mình, mình nghĩ bản thân mình reasoning khá tốt thay vì chỉ ngồi gõ code, mình thường ngồi cả ngày để reasoning và code 1 vài dòng nhỏ nhưng ý nghĩa, mình thích việc trade ra vấn đề và suy nghĩ triết lý hay ý nghĩa của mỗi dòng code, tại sao nó tồn tại thay vì cố gắng commit hay sửa code nhiều để tỏ ra mình bận rộn. Đối vs mình cái khó nhất là làm sao code thêm để bổ sung vốn tri thức cho dự án mà ko làm ảnh hưởng cái cũ vì tích lũy tri thức mới hình thành pattern, nếu ko tích lũy thì ko thể hình thành pattern mà chỉ là những đoạn code rời rạc dư thừa, over engineer, best practice giáo điều, ko phải best practice thực sự.
+    </p>
+    <p>
       - Mỗi ngày phải tạo đc 1 commit có ý nghĩa : 1 thuật toán work đúng, update code project phải có ý đồ rõ ràng và giải quyết pain thực sự.
     </p>
 
-    <p>
-      - Mỗi ngày mình vẫn luôn cố gắng commit 1 thứ gì đó có ý nghĩa dù mình đã thất nghiệp trong 1 thời gian dài, có thể là 1 thuật toán nào đó hay hay trong Cracking the code interview, hoặc 1 update nào đó có ý nghĩa cho dự án mà mình tâm huyết, mình ko biết liệu sẽ đi đến đâu nhưng mình nghĩ đó là niềm vui mỗi ngày của mình, mình nghĩ bản thân mình reasoning khá tốt thay vì chỉ ngồi gõ code, mình thường ngồi cả ngày để reasoning và code 1 vài dòng nhỏ nhưng ý nghĩa, mình thích việc trade ra vấn đề và suy nghĩ triết lý hay ý nghĩa của mỗi dòng code, tại sao nó tồn tại thay vì cố gắng commit hay sửa code nhiều để tỏ ra mình bận rộn. Đối vs mình cái khó nhất là làm sao code thêm để bổ sung vốn tri thức cho dự án mà ko làm ảnh hưởng cái cũ vì tích lũy tri thức mới hình thành pattern, nếu ko tích lũy thì ko thể hình thành pattern mà chỉ là những đoạn code rời rạc dư thừa, over engineer, best practice giáo điều, ko phải best practice thực sự.
-    </p>
     </div>
 
     <div class="work-item">
