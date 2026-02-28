@@ -5,10 +5,8 @@
   <div class="container">
     <header class="hero">
       <h1>Minh Java BE Dev (có 1 chút hiểu biết về vuejs, solidity).</h1>
-      <h2>Tôi xây hệ thống, không xây trang.</h2>
       <p class="sub">
         Sự đơn giản thì scale được.<br />
-        Sự ồn ào thì không.
       </p>
     </header>
 
