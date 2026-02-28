@@ -6,7 +6,7 @@
     <header class="hero">
       <h1>Minh Java BE Dev (có 1 chút hiểu biết về vuejs, solidity).</h1>
       <p class="sub">
-        Sự đơn giản thì scale được.<br />
+        Scale từ sự đơn giản.<br />
       </p>
     </header>
 
@@ -29,6 +29,7 @@
       <h4>Phong cách code : Simplify : Giảm nhiễu – Tăng nhất quán – Tích lũy pattern.</h4>
 
       <ul class="rule-list">
+        <li>1. Giữ mọi thứ đơn giản, ko over engineer nếu ko cần thiết.</li>
         <li>1. Readable first, Chỉ optimize khi đã chốt đc spec with high readable.</li>
         <li>2. Chỉ optimize nếu load test có số liệu về tail latency, ko tối ưu mù nếu ko có số liệu</li>
         <li>3. Reafactor code theo flow data, anti clean code, anti các thể loại pattern phá flow vì best practive giáo điều thường gây tách hàm, phá flow logic code, call stack sâu, allocation thừa, nhảy hàm phức tạp mà ít giá trị kĩ thuật, refactor phải đảm bảo rõ flow, ko tách hàm vô nghĩa.</li>
