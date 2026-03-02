@@ -58,6 +58,7 @@
         <li>16. Viết unit test với mục đích duy nhất : khóa invariant bussiness chứ ko phải để tăng coverage, nếu invariant mình có thể encode bằng comment hoặc khả năng đọc đc implicit trong code mình có thể bỏ viết test.</li>
         <li>17. Tư duy onwership : dev nên chịu trách nhiệm cho toàn bộ code của mình (boundary họ có thể kiểm soát) ở phần outcome, tức là toàn bộ hệ quả kỹ thuật trực tiếp từ thay đổi code của mình.</li>
         <li>18. Comming soon: Tiếp tục phát triển triết lý trong quá trình làm việc sắp tới .... .</li>
+        <li>19. Không phát minh lại cái bánh xe, luôn kế thừa và phát huy solution đã có .</li>
       </ul>
     </div>
   </section>
