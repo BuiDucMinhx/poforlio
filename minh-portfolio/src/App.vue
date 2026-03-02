@@ -48,7 +48,7 @@
         <li>6. Viết Api theo use case, tổ chức code theo use case, 1 file access data chỉ phục vụ duy nhất 1 bussiness, đây chính là quy tắc đơn trách nhiệm thực sự.</li>
         <li>7. Ko đánh index bừa nếu ko đo explain đc query, có thể đánh theo quy tắc nếu chứng minh đc số liệu (mình rất rất ít đánh index)</li>
         <li>8. Optimic Lock + retry + version: ko dùng nếu ko chứng minh đc giá trị, retry để đảm bảo consistency luôn nặng hơn lock thường.</li>
-        <li>9. Với các case chưa pass : luôn fix bằng cách : ít thay đối nhất để bảo toàn toàn bộ flow bussiness đã có và đảm bảo sau khi fix các case cũ ko bị phá, chỉ refator lại để thống nhất flow khi đã rõ toàn bộ ý đồ của flow cũ.</li>
+        <li>9. Với các case chưa pass : luôn fix bằng cách : ít thay đối nhất để bảo toàn toàn bộ flow bussiness đã có và đảm bảo sau khi fix các case cũ ko bị phá, chỉ refactor lại để thống nhất flow khi đã rõ toàn bộ ý đồ của flow cũ.</li>
         <li>10. Tôn trọng kĩ thuật thay vì buzzword nghe sang nhưng ko có giá trị.</li>
         <li>11. Các loại stream, lamba, Optional… hạn chế dùng vì jit khó inline, nếu dùng nên có số liệu khi đo vs cách viết thông thường.</li>
         <li>12. Thuật toán : chỉ dùng để optimize, ko viết cho đẹp. nếu framework đã hỗ trợ thì nên dùng framework để readable first.</li>
