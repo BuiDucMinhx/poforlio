@@ -4,9 +4,16 @@
 <template>
   <div class="container">
     <header class="hero">
-      <h1>Minh Java BE Dev (có 1 chút hiểu biết về vuejs, solidity).</h1>
+      <div class="hero-top">
+        <img class="avatar" src="/images/avatar.jpg" alt="Minh avatar" />
+        <div>
+          <h1>Minh Java BE Dev</h1>
+          <p class="role">(1 chút hiểu biết về VueJS, Solidity)</p>
+        </div>
+      </div>
+
       <p class="sub">
-        Scale từ sự đơn giản.<br />
+        Scale từ sự đơn giản.
       </p>
     </header>
 
@@ -32,7 +39,7 @@
         <li>1. Giữ mọi thứ đơn giản, ko over engineer nếu ko cần thiết.</li>
         <li>1. Readable first, Chỉ optimize khi đã chốt đc spec with high readable.</li>
         <li>2. Chỉ optimize nếu load test có số liệu về tail latency, ko tối ưu mù nếu ko có số liệu</li>
-        <li>3. Reafactor code theo flow data, anti clean code, anti các thể loại pattern phá flow vì best practive giáo điều thường gây tách hàm, phá flow logic code, call stack sâu, allocation thừa, nhảy hàm phức tạp mà ít giá trị kĩ thuật, refactor phải đảm bảo rõ flow, ko tách hàm vô nghĩa.</li>
+        <li>3. Refactor code theo flow data, anti clean code, anti các thể loại pattern phá flow vì best practive giáo điều thường gây tách hàm, phá flow logic code, call stack sâu, allocation thừa, nhảy hàm phức tạp mà ít giá trị kĩ thuật, refactor phải đảm bảo rõ flow, ko tách hàm vô nghĩa.</li>
         <li>4. Query : hạn viết native, thuần JPA nhất nếu có thể, chỉ viết nếu thực sự cần (mình cảm thấy luôn có cách để ko cần viết và chứng minh performance tương đương).</li>
         <li>5. Khi có 1 requiment chưa rõ spec : Viết abtract và implement theo 2 hướng
           <br />- SpecImplement : SpecImplement viết trước theo hướng readable càng rõ flow thể hiện đúng requiment càng tốt, có thể mapping trực tiếp từ requiment, tối ưu readable theo hướng : bỏ code thừa tối ưu cho flow logic.
@@ -41,7 +48,7 @@
         <li>6. Viết Api theo use case, tổ chức code theo use case, 1 file access data chỉ phục vụ duy nhất 1 bussiness, đây chính là quy tắc đơn trách nhiệm thực sự.</li>
         <li>7. Ko đánh index bừa nếu ko đo explain đc query, có thể đánh theo quy tắc nếu chứng minh đc số liệu (mình rất rất ít đánh index)</li>
         <li>8. Optimic Lock + retry + version: ko dùng nếu ko chứng minh đc giá trị, retry để đảm bảo consistency luôn nặng hơn lock thường.</li>
-        <li>9. Với các case chưa pass : luôn fix bằng cách : ít thay đối nhất để bảo toàn toàn bộ flow bussiness đã có và đảm bảo sau khi fix các case cũ ko bị phá, chỉ reafator lại để thống nhất flow khi đã rõ toàn bộ ý đồ của flow cũ.</li>
+        <li>9. Với các case chưa pass : luôn fix bằng cách : ít thay đối nhất để bảo toàn toàn bộ flow bussiness đã có và đảm bảo sau khi fix các case cũ ko bị phá, chỉ refator lại để thống nhất flow khi đã rõ toàn bộ ý đồ của flow cũ.</li>
         <li>10. Tôn trọng kĩ thuật thay vì buzzword nghe sang nhưng ko có giá trị.</li>
         <li>11. Các loại stream, lamba, Optional… hạn chế dùng vì jit khó inline, nếu dùng nên có số liệu khi đo vs cách viết thông thường.</li>
         <li>12. Thuật toán : chỉ dùng để optimize, ko viết cho đẹp. nếu framework đã hỗ trợ thì nên dùng framework để readable first.</li>
@@ -49,7 +56,7 @@
         <li>14. Dùng primitive để hạn chế allocation nhất có thể.</li>
         <li>15. Hiện app mình chỉ xài caffein thay vì redis cho cahce, SSE thay vì kafka cho queue, mình đang rất muốn scale để xem ngưỡng nào là cần đổi stack. (scale khi status > thresh hold).</li>
         <li>16. Viết unit test với mục đích duy nhất : khóa invariant bussiness chứ ko phải để tăng coverage, nếu invariant mình có thể encode bằng comment hoặc khả năng đọc đc implicit trong code mình có thể bỏ viết test.</li>
-        <li>17. Tư duy onwership : dev nên chịu trách nhiệm cho toàn bộ code của mình ở phần outcome chỉ như thế dev mới viết code 1 cách đàng hoàng, nếu ko được chịu trách nhiệm thì trực giác kĩ thuật của họ sẽ bị mài mòn theo năm tháng .</li>
+        <li>17. Tư duy onwership : dev nên chịu trách nhiệm cho toàn bộ code của mình (boundary họ có thể kiểm soát) ở phần outcome, tức là toàn bộ hệ quả kỹ thuật trực tiếp từ thay đổi code của mình.</li>
       </ul>
     </div>
   </section>
@@ -63,9 +70,9 @@
         <h4>Simplify</h4>
         <ul>
           <li>Giảm nhiễu – Tăng nhất quán – Tích lũy pattern.</li>
-          <li>Thuật toán để tối ưu, không để khoe.</li>
-          <li>Tôn trọng kỹ thuật hơn buzzword.</li>
-          <li>Thread và allocation luôn có giá phải trả.</li>
+          <li>Không over engineer.</li>
+          <li>Thuật toán để tối ưu, không để làm màu.</li>
+          <li>Readable first to latency.</li>
         </ul>
       </div>
 
@@ -73,8 +80,6 @@
         <h4>Scaling Mindset</h4>
         <ul>
           <li>Chỉ đổi stack khi metrics vượt threshold.</li>
-          <li>Caffeine trước Redis.</li>
-          <li>SSE trước Kafka.</li>
           <li>Scale dựa trên dữ liệu, không dựa trên hype.</li>
         </ul>
       </div>
@@ -226,5 +231,24 @@ a {
   max-width: 900px;
   display: block;
   margin: 32px 0;
+}
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 24px;
+  filter: grayscale(100%);
+}
+.hero-top {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.role {
+  margin: 4px 0 0 0;
+  color: var(--muted);
+  font-size: 16px;
 }
 </style>
