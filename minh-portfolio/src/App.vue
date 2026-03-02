@@ -20,7 +20,7 @@
     <section class="divider"></section>
 
 <section class="section">
-  <h3>Triết lý code của mình</h3>
+  <h3>Triết lý code của mình </h3>
 
   <div class="work-item">
     <p>
@@ -33,7 +33,7 @@
     </div>
 
     <div class="work-item">
-      <h4>Phong cách code : Simplify : Giảm nhiễu – Tăng nhất quán – Tích lũy pattern.</h4>
+      <h4> Engineering Manifesto : Simplify : Giảm nhiễu – Tăng nhất quán – Tích lũy pattern.</h4>
 
       <ul class="rule-list">
         <li>1. Giữ mọi thứ đơn giản, ko over engineer nếu ko cần thiết.</li>
