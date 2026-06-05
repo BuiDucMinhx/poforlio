@@ -36,7 +36,7 @@
       <h4> Engineering Manifesto : Simplify : Giảm nhiễu – Tăng nhất quán – Tích lũy pattern.</h4>
 
       <ul class="rule-list">
-        <li>1. Giữ mọi thứ đơn giản, ko over engineer nếu ko cần thiết.</li>
+        <li>0. Giữ mọi thứ đơn giản, ko over engineer nếu ko cần thiết.</li>
         <li>1. Readable first, Chỉ optimize khi đã chốt đc spec with high readable.</li>
         <li>2. Chỉ optimize nếu load test có số liệu về tail latency, ko tối ưu mù nếu ko có số liệu</li>
         <li>3. Refactor code theo flow data, anti clean code, anti các thể loại pattern phá flow vì best practive giáo điều thường gây tách hàm, phá flow logic code, call stack sâu, allocation thừa, nhảy hàm phức tạp mà ít giá trị kĩ thuật, refactor phải đảm bảo rõ flow, ko tách hàm vô nghĩa.</li>
@@ -59,6 +59,8 @@
         <li>17. Tư duy onwership : dev nên chịu trách nhiệm cho toàn bộ code của mình (boundary họ có thể kiểm soát) ở phần outcome, tức là toàn bộ hệ quả kỹ thuật trực tiếp từ thay đổi code của mình.</li>
         <li>18. Comming soon: Tiếp tục phát triển triết lý trong quá trình làm việc sắp tới .... .</li>
         <li>19. Không phát minh lại cái bánh xe, luôn kế thừa và phát huy solution đã có .</li>
+        <li>20. Scientific thinking : sẵn sàng giữ toàn bộ code và ko sửa bất kì dòng nào nếu core invarant đã đáp ứng dù effort để hiểu toàn bộ ko hề thấp, hoặc sẵn sàng đập đi toàn bộ xây lại từ đầu nếu core invarant sai từ gốc</li>
+        <li>21. Code nhiều hay ít ko nói lên hiệu suất công việc, hiệu suất thực sự sẽ dựa trên thời gian suy nghĩ bỏ ra để code đc những dòng đó dù ít.</li>
       </ul>
     </div>
   </section>
